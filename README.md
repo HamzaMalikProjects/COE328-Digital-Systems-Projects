@@ -54,7 +54,7 @@ Completed integration and testing of the processor. Added instruction and data m
 
 ## 🎯 Learning Outcomes
 
-- Mastered combinational and sequential digital logic design  
+- combinational and sequential digital logic design  
 - Gained proficiency in VHDL for hardware description  
 - Built arithmetic and control logic units from the ground up  
 - Designed and simulated a basic CPU architecture  
@@ -77,16 +77,6 @@ Completed integration and testing of the processor. Added instruction and data m
 
 ---
 
-## 📷 Screenshots & Diagrams (Optional)
-
-You can include images here such as:
-- RTL schematics from Quartus  
-- FSM diagrams  
-- Waveforms from ModelSim  
-- FPGA test setup photos
-
----
-
 ## 📌 Future Enhancements
 
 - Add pipelining to the processor design  
@@ -96,9 +86,6 @@ You can include images here such as:
 - Add external memory interfaces
 
 ---
-
-## 👤 Author
-**Hamza Malik**  
 
 
 
