@@ -1,0 +1,327 @@
+Simulator report for ALU
+Thu Nov 24 22:00:06 2022
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 116 nodes    ;
+; Simulation Coverage         ;      35.85 % ;
+; Total Number of Transitions ; 253          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                        ;
++--------------------------------------------------------------------------------------------+--------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                      ; Default Value ;
++--------------------------------------------------------------------------------------------+--------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                   ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                         ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                          ;               ;
+; Vector input source                                                                        ; C:/Users/butth/OneDrive/Desktop/Lab6NEWNEW/part3waveform.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                           ; On            ;
+; Check outputs                                                                              ; Off                                                          ; Off           ;
+; Report simulation coverage                                                                 ; On                                                           ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                           ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                           ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                           ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                          ; Off           ;
+; Detect glitches                                                                            ; Off                                                          ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                          ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                          ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                          ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                          ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                           ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                   ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                          ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                          ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                         ; Auto          ;
++--------------------------------------------------------------------------------------------+--------------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      35.85 % ;
+; Total nodes checked                                 ; 116          ;
+; Total output ports checked                          ; 106          ;
+; Total output ports with complete 1/0-value coverage ; 38           ;
+; Total output ports with no 1/0-value coverage       ; 59           ;
+; Total output ports with no 1-value coverage         ; 63           ;
+; Total output ports with no 0-value coverage         ; 64           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                      ;
++---------------------------------------+---------------------------------------+------------------+
+; Node Name                             ; Output Port Name                      ; Output Port Type ;
++---------------------------------------+---------------------------------------+------------------+
+; |figure7|Clock                        ; |figure7|Clock                        ; out              ;
+; |figure7|student_id[0]                ; |figure7|student_id[0]                ; pin_out          ;
+; |figure7|student_id[3]                ; |figure7|student_id[3]                ; pin_out          ;
+; |figure7|student_id[4]                ; |figure7|student_id[4]                ; pin_out          ;
+; |figure7|student_id[5]                ; |figure7|student_id[5]                ; pin_out          ;
+; |figure7|machine:inst1923|yfsm.s1     ; |figure7|machine:inst1923|yfsm.s1     ; regout           ;
+; |figure7|machine:inst1923|yfsm.s2     ; |figure7|machine:inst1923|yfsm.s2     ; regout           ;
+; |figure7|machine:inst1923|yfsm.s3     ; |figure7|machine:inst1923|yfsm.s3     ; regout           ;
+; |figure7|machine:inst1923|yfsm.s4     ; |figure7|machine:inst1923|yfsm.s4     ; regout           ;
+; |figure7|machine:inst1923|yfsm.s5     ; |figure7|machine:inst1923|yfsm.s5     ; regout           ;
+; |figure7|machine:inst1923|yfsm.s6     ; |figure7|machine:inst1923|yfsm.s6     ; regout           ;
+; |figure7|machine:inst1923|yfsm.s7     ; |figure7|machine:inst1923|yfsm.s7     ; regout           ;
+; |figure7|machine:inst1923|WideOr7     ; |figure7|machine:inst1923|WideOr7     ; out0             ;
+; |figure7|machine:inst1923|WideOr8     ; |figure7|machine:inst1923|WideOr8     ; out0             ;
+; |figure7|machine:inst1923|WideOr9     ; |figure7|machine:inst1923|WideOr9     ; out0             ;
+; |figure7|machine:inst1923|yfsm~3      ; |figure7|machine:inst1923|yfsm~3      ; out0             ;
+; |figure7|machine:inst1923|Selector0~0 ; |figure7|machine:inst1923|Selector0~0 ; out0             ;
+; |figure7|machine:inst1923|WideOr0~0   ; |figure7|machine:inst1923|WideOr0~0   ; out0             ;
+; |figure7|machine:inst1923|WideOr0~1   ; |figure7|machine:inst1923|WideOr0~1   ; out0             ;
+; |figure7|machine:inst1923|WideOr0~2   ; |figure7|machine:inst1923|WideOr0~2   ; out0             ;
+; |figure7|machine:inst1923|WideOr0~3   ; |figure7|machine:inst1923|WideOr0~3   ; out0             ;
+; |figure7|machine:inst1923|WideOr0~4   ; |figure7|machine:inst1923|WideOr0~4   ; out0             ;
+; |figure7|machine:inst1923|WideOr0~5   ; |figure7|machine:inst1923|WideOr0~5   ; out0             ;
+; |figure7|machine:inst1923|yfsm~10     ; |figure7|machine:inst1923|yfsm~10     ; out0             ;
+; |figure7|machine:inst1923|Selector1~0 ; |figure7|machine:inst1923|Selector1~0 ; out0             ;
+; |figure7|machine:inst1923|Selector1~2 ; |figure7|machine:inst1923|Selector1~2 ; out0             ;
+; |figure7|machine:inst1923|Selector2~0 ; |figure7|machine:inst1923|Selector2~0 ; out0             ;
+; |figure7|machine:inst1923|Selector2~2 ; |figure7|machine:inst1923|Selector2~2 ; out0             ;
+; |figure7|machine:inst1923|Selector3~0 ; |figure7|machine:inst1923|Selector3~0 ; out0             ;
+; |figure7|machine:inst1923|Selector3~2 ; |figure7|machine:inst1923|Selector3~2 ; out0             ;
+; |figure7|machine:inst1923|Selector4~0 ; |figure7|machine:inst1923|Selector4~0 ; out0             ;
+; |figure7|machine:inst1923|Selector4~2 ; |figure7|machine:inst1923|Selector4~2 ; out0             ;
+; |figure7|machine:inst1923|Selector5~0 ; |figure7|machine:inst1923|Selector5~0 ; out0             ;
+; |figure7|machine:inst1923|Selector5~2 ; |figure7|machine:inst1923|Selector5~2 ; out0             ;
+; |figure7|machine:inst1923|Selector6~0 ; |figure7|machine:inst1923|Selector6~0 ; out0             ;
+; |figure7|machine:inst1923|Selector6~3 ; |figure7|machine:inst1923|Selector6~3 ; out0             ;
+; |figure7|modpt3ALU:inst|LessThan0~3   ; |figure7|modpt3ALU:inst|LessThan0~3   ; out0             ;
+; |figure7|modpt3ALU:inst|LessThan0~7   ; |figure7|modpt3ALU:inst|LessThan0~7   ; out0             ;
++---------------------------------------+---------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                         ;
++---------------------------------------+---------------------------------------+------------------+
+; Node Name                             ; Output Port Name                      ; Output Port Type ;
++---------------------------------------+---------------------------------------+------------------+
+; |figure7|R_first_four[0]              ; |figure7|R_first_four[0]              ; pin_out          ;
+; |figure7|R_first_four[1]              ; |figure7|R_first_four[1]              ; pin_out          ;
+; |figure7|R_first_four[2]              ; |figure7|R_first_four[2]              ; pin_out          ;
+; |figure7|R_first_four[3]              ; |figure7|R_first_four[3]              ; pin_out          ;
+; |figure7|R_first_four[4]              ; |figure7|R_first_four[4]              ; pin_out          ;
+; |figure7|R_first_four[5]              ; |figure7|R_first_four[5]              ; pin_out          ;
+; |figure7|R_first_four[6]              ; |figure7|R_first_four[6]              ; pin_out          ;
+; |figure7|Reset_A                      ; |figure7|Reset_A                      ; out              ;
+; |figure7|A[7]                         ; |figure7|A[7]                         ; out              ;
+; |figure7|A[6]                         ; |figure7|A[6]                         ; out              ;
+; |figure7|A[5]                         ; |figure7|A[5]                         ; out              ;
+; |figure7|A[4]                         ; |figure7|A[4]                         ; out              ;
+; |figure7|A[3]                         ; |figure7|A[3]                         ; out              ;
+; |figure7|A[2]                         ; |figure7|A[2]                         ; out              ;
+; |figure7|A[1]                         ; |figure7|A[1]                         ; out              ;
+; |figure7|A[0]                         ; |figure7|A[0]                         ; out              ;
+; |figure7|data_in                      ; |figure7|data_in                      ; out              ;
+; |figure7|FSM_reset                    ; |figure7|FSM_reset                    ; out              ;
+; |figure7|student_id[1]                ; |figure7|student_id[1]                ; pin_out          ;
+; |figure7|student_id[2]                ; |figure7|student_id[2]                ; pin_out          ;
+; |figure7|student_id[6]                ; |figure7|student_id[6]                ; pin_out          ;
+; |figure7|machine:inst1923|yfsm~0      ; |figure7|machine:inst1923|yfsm~0      ; out              ;
+; |figure7|machine:inst1923|yfsm.s0     ; |figure7|machine:inst1923|yfsm.s0     ; regout           ;
+; |figure7|machine:inst1923|yfsm~4      ; |figure7|machine:inst1923|yfsm~4      ; out0             ;
+; |figure7|machine:inst1923|yfsm.s0~0   ; |figure7|machine:inst1923|yfsm.s0~0   ; out0             ;
+; |figure7|machine:inst1923|yfsm~6      ; |figure7|machine:inst1923|yfsm~6      ; out0             ;
+; |figure7|machine:inst1923|yfsm~14     ; |figure7|machine:inst1923|yfsm~14     ; out0             ;
+; |figure7|latch1:inst1|Q[7]            ; |figure7|latch1:inst1|Q[7]            ; regout           ;
+; |figure7|latch1:inst1|Q[6]            ; |figure7|latch1:inst1|Q[6]            ; regout           ;
+; |figure7|latch1:inst1|Q[5]            ; |figure7|latch1:inst1|Q[5]            ; regout           ;
+; |figure7|latch1:inst1|Q[4]            ; |figure7|latch1:inst1|Q[4]            ; regout           ;
+; |figure7|latch1:inst1|Q[3]            ; |figure7|latch1:inst1|Q[3]            ; regout           ;
+; |figure7|latch1:inst1|Q[2]            ; |figure7|latch1:inst1|Q[2]            ; regout           ;
+; |figure7|latch1:inst1|Q[1]            ; |figure7|latch1:inst1|Q[1]            ; regout           ;
+; |figure7|latch1:inst1|Q[0]            ; |figure7|latch1:inst1|Q[0]            ; regout           ;
+; |figure7|modpt3ALU:inst|Result[0]     ; |figure7|modpt3ALU:inst|Result[0]     ; regout           ;
+; |figure7|machine:inst1923|Selector0~1 ; |figure7|machine:inst1923|Selector0~1 ; out0             ;
+; |figure7|machine:inst1923|Selector0~2 ; |figure7|machine:inst1923|Selector0~2 ; out0             ;
+; |figure7|machine:inst1923|Selector0~3 ; |figure7|machine:inst1923|Selector0~3 ; out0             ;
+; |figure7|machine:inst1923|Selector1~1 ; |figure7|machine:inst1923|Selector1~1 ; out0             ;
+; |figure7|machine:inst1923|Selector2~1 ; |figure7|machine:inst1923|Selector2~1 ; out0             ;
+; |figure7|machine:inst1923|Selector3~1 ; |figure7|machine:inst1923|Selector3~1 ; out0             ;
+; |figure7|machine:inst1923|Selector4~1 ; |figure7|machine:inst1923|Selector4~1 ; out0             ;
+; |figure7|machine:inst1923|Selector5~1 ; |figure7|machine:inst1923|Selector5~1 ; out0             ;
+; |figure7|machine:inst1923|Selector6~1 ; |figure7|machine:inst1923|Selector6~1 ; out0             ;
+; |figure7|machine:inst1923|Selector6~2 ; |figure7|machine:inst1923|Selector6~2 ; out0             ;
+; |figure7|modpt3ALU:inst|LessThan0~0   ; |figure7|modpt3ALU:inst|LessThan0~0   ; out0             ;
+; |figure7|modpt3ALU:inst|LessThan0~1   ; |figure7|modpt3ALU:inst|LessThan0~1   ; out0             ;
+; |figure7|modpt3ALU:inst|LessThan0~2   ; |figure7|modpt3ALU:inst|LessThan0~2   ; out0             ;
+; |figure7|modpt3ALU:inst|LessThan0~4   ; |figure7|modpt3ALU:inst|LessThan0~4   ; out0             ;
+; |figure7|modpt3ALU:inst|LessThan0~5   ; |figure7|modpt3ALU:inst|LessThan0~5   ; out0             ;
+; |figure7|modpt3ALU:inst|LessThan0~6   ; |figure7|modpt3ALU:inst|LessThan0~6   ; out0             ;
+; |figure7|modpt3ALU:inst|LessThan0~8   ; |figure7|modpt3ALU:inst|LessThan0~8   ; out0             ;
+; |figure7|modpt3ALU:inst|LessThan0~9   ; |figure7|modpt3ALU:inst|LessThan0~9   ; out0             ;
+; |figure7|modpt3ALU:inst|LessThan0~10  ; |figure7|modpt3ALU:inst|LessThan0~10  ; out0             ;
+; |figure7|modpt3ALU:inst|LessThan0~11  ; |figure7|modpt3ALU:inst|LessThan0~11  ; out0             ;
+; |figure7|modpt3ALU:inst|LessThan0~12  ; |figure7|modpt3ALU:inst|LessThan0~12  ; out0             ;
+; |figure7|modpt3ALU:inst|LessThan0~13  ; |figure7|modpt3ALU:inst|LessThan0~13  ; out0             ;
+; |figure7|modpt3ALU:inst|LessThan0~14  ; |figure7|modpt3ALU:inst|LessThan0~14  ; out0             ;
+; |figure7|modpt3ALU:inst|LessThan0~15  ; |figure7|modpt3ALU:inst|LessThan0~15  ; out0             ;
+; |figure7|modpt3ALU:inst|LessThan0~16  ; |figure7|modpt3ALU:inst|LessThan0~16  ; out0             ;
+; |figure7|modpt3ALU:inst|LessThan0~17  ; |figure7|modpt3ALU:inst|LessThan0~17  ; out0             ;
+; |figure7|modpt3ALU:inst|LessThan0~18  ; |figure7|modpt3ALU:inst|LessThan0~18  ; out0             ;
++---------------------------------------+---------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                   ;
++--------------------------------------------+--------------------------------------------+------------------+
+; Node Name                                  ; Output Port Name                           ; Output Port Type ;
++--------------------------------------------+--------------------------------------------+------------------+
+; |figure7|R_first_four[0]                   ; |figure7|R_first_four[0]                   ; pin_out          ;
+; |figure7|R_first_four[1]                   ; |figure7|R_first_four[1]                   ; pin_out          ;
+; |figure7|R_first_four[2]                   ; |figure7|R_first_four[2]                   ; pin_out          ;
+; |figure7|R_first_four[3]                   ; |figure7|R_first_four[3]                   ; pin_out          ;
+; |figure7|R_first_four[4]                   ; |figure7|R_first_four[4]                   ; pin_out          ;
+; |figure7|R_first_four[5]                   ; |figure7|R_first_four[5]                   ; pin_out          ;
+; |figure7|R_first_four[6]                   ; |figure7|R_first_four[6]                   ; pin_out          ;
+; |figure7|Reset_A                           ; |figure7|Reset_A                           ; out              ;
+; |figure7|A[7]                              ; |figure7|A[7]                              ; out              ;
+; |figure7|A[6]                              ; |figure7|A[6]                              ; out              ;
+; |figure7|A[5]                              ; |figure7|A[5]                              ; out              ;
+; |figure7|A[4]                              ; |figure7|A[4]                              ; out              ;
+; |figure7|A[3]                              ; |figure7|A[3]                              ; out              ;
+; |figure7|A[2]                              ; |figure7|A[2]                              ; out              ;
+; |figure7|A[1]                              ; |figure7|A[1]                              ; out              ;
+; |figure7|A[0]                              ; |figure7|A[0]                              ; out              ;
+; |figure7|data_in                           ; |figure7|data_in                           ; out              ;
+; |figure7|FSM_reset                         ; |figure7|FSM_reset                         ; out              ;
+; |figure7|student_id[1]                     ; |figure7|student_id[1]                     ; pin_out          ;
+; |figure7|student_id[2]                     ; |figure7|student_id[2]                     ; pin_out          ;
+; |figure7|student_id[6]                     ; |figure7|student_id[6]                     ; pin_out          ;
+; |figure7|machine:inst1923|yfsm~0           ; |figure7|machine:inst1923|yfsm~0           ; out              ;
+; |figure7|machine:inst1923|yfsm~1           ; |figure7|machine:inst1923|yfsm~1           ; out0             ;
+; |figure7|machine:inst1923|yfsm~2           ; |figure7|machine:inst1923|yfsm~2           ; out              ;
+; |figure7|machine:inst1923|yfsm.s8          ; |figure7|machine:inst1923|yfsm.s8          ; regout           ;
+; |figure7|machine:inst1923|yfsm~4           ; |figure7|machine:inst1923|yfsm~4           ; out0             ;
+; |figure7|machine:inst1923|yfsm.s0~0        ; |figure7|machine:inst1923|yfsm.s0~0        ; out0             ;
+; |figure7|machine:inst1923|yfsm.s8~0        ; |figure7|machine:inst1923|yfsm.s8~0        ; out0             ;
+; |figure7|machine:inst1923|current_state[3] ; |figure7|machine:inst1923|current_state[3] ; out0             ;
+; |figure7|machine:inst1923|yfsm~14          ; |figure7|machine:inst1923|yfsm~14          ; out0             ;
+; |figure7|latch1:inst1|Q[7]                 ; |figure7|latch1:inst1|Q[7]                 ; regout           ;
+; |figure7|latch1:inst1|Q[6]                 ; |figure7|latch1:inst1|Q[6]                 ; regout           ;
+; |figure7|latch1:inst1|Q[5]                 ; |figure7|latch1:inst1|Q[5]                 ; regout           ;
+; |figure7|latch1:inst1|Q[4]                 ; |figure7|latch1:inst1|Q[4]                 ; regout           ;
+; |figure7|latch1:inst1|Q[3]                 ; |figure7|latch1:inst1|Q[3]                 ; regout           ;
+; |figure7|latch1:inst1|Q[2]                 ; |figure7|latch1:inst1|Q[2]                 ; regout           ;
+; |figure7|latch1:inst1|Q[1]                 ; |figure7|latch1:inst1|Q[1]                 ; regout           ;
+; |figure7|latch1:inst1|Q[0]                 ; |figure7|latch1:inst1|Q[0]                 ; regout           ;
+; |figure7|modpt3ALU:inst|Result[0]          ; |figure7|modpt3ALU:inst|Result[0]          ; regout           ;
+; |figure7|machine:inst1923|Selector0~2      ; |figure7|machine:inst1923|Selector0~2      ; out0             ;
+; |figure7|machine:inst1923|Selector1~1      ; |figure7|machine:inst1923|Selector1~1      ; out0             ;
+; |figure7|machine:inst1923|Selector2~1      ; |figure7|machine:inst1923|Selector2~1      ; out0             ;
+; |figure7|machine:inst1923|Selector3~1      ; |figure7|machine:inst1923|Selector3~1      ; out0             ;
+; |figure7|machine:inst1923|Selector4~1      ; |figure7|machine:inst1923|Selector4~1      ; out0             ;
+; |figure7|machine:inst1923|Selector5~1      ; |figure7|machine:inst1923|Selector5~1      ; out0             ;
+; |figure7|machine:inst1923|Selector6~1      ; |figure7|machine:inst1923|Selector6~1      ; out0             ;
+; |figure7|machine:inst1923|Selector6~2      ; |figure7|machine:inst1923|Selector6~2      ; out0             ;
+; |figure7|modpt3ALU:inst|LessThan0~0        ; |figure7|modpt3ALU:inst|LessThan0~0        ; out0             ;
+; |figure7|modpt3ALU:inst|LessThan0~1        ; |figure7|modpt3ALU:inst|LessThan0~1        ; out0             ;
+; |figure7|modpt3ALU:inst|LessThan0~2        ; |figure7|modpt3ALU:inst|LessThan0~2        ; out0             ;
+; |figure7|modpt3ALU:inst|LessThan0~4        ; |figure7|modpt3ALU:inst|LessThan0~4        ; out0             ;
+; |figure7|modpt3ALU:inst|LessThan0~5        ; |figure7|modpt3ALU:inst|LessThan0~5        ; out0             ;
+; |figure7|modpt3ALU:inst|LessThan0~6        ; |figure7|modpt3ALU:inst|LessThan0~6        ; out0             ;
+; |figure7|modpt3ALU:inst|LessThan0~8        ; |figure7|modpt3ALU:inst|LessThan0~8        ; out0             ;
+; |figure7|modpt3ALU:inst|LessThan0~9        ; |figure7|modpt3ALU:inst|LessThan0~9        ; out0             ;
+; |figure7|modpt3ALU:inst|LessThan0~10       ; |figure7|modpt3ALU:inst|LessThan0~10       ; out0             ;
+; |figure7|modpt3ALU:inst|LessThan0~11       ; |figure7|modpt3ALU:inst|LessThan0~11       ; out0             ;
+; |figure7|modpt3ALU:inst|LessThan0~12       ; |figure7|modpt3ALU:inst|LessThan0~12       ; out0             ;
+; |figure7|modpt3ALU:inst|LessThan0~13       ; |figure7|modpt3ALU:inst|LessThan0~13       ; out0             ;
+; |figure7|modpt3ALU:inst|LessThan0~14       ; |figure7|modpt3ALU:inst|LessThan0~14       ; out0             ;
+; |figure7|modpt3ALU:inst|LessThan0~15       ; |figure7|modpt3ALU:inst|LessThan0~15       ; out0             ;
+; |figure7|modpt3ALU:inst|LessThan0~16       ; |figure7|modpt3ALU:inst|LessThan0~16       ; out0             ;
+; |figure7|modpt3ALU:inst|LessThan0~17       ; |figure7|modpt3ALU:inst|LessThan0~17       ; out0             ;
+; |figure7|modpt3ALU:inst|LessThan0~18       ; |figure7|modpt3ALU:inst|LessThan0~18       ; out0             ;
++--------------------------------------------+--------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Thu Nov 24 22:00:05 2022
+Info: Command: quartus_sim --simulation_results_format=VWF ALU -c ALU
+Info (324025): Using vector source file "C:/Users/butth/OneDrive/Desktop/Lab6NEWNEW/part3waveform.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      35.85 %
+Info (328052): Number of transitions in simulation is 253
+Info (324045): Vector file ALU.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4441 megabytes
+    Info: Processing ended: Thu Nov 24 22:00:06 2022
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+
