@@ -40,7 +40,7 @@ Completed integration and testing of the processor. Added instruction and data m
 
 ---
 
-## 🛠️ Technologies Used
+### 🛠️ Technologies Used
 
 - **VHDL** – RTL description for digital circuits and processor logic  
 - **Quartus Prime** – Synthesis, implementation, pin planning, and device programming  
